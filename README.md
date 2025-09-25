@@ -66,3 +66,25 @@ API will start on:
 
 Swagger available at:
 👉 https://localhost:7031/swagger
+🔗 Frontend
+
+This backend powers the EMS-Frontend
+ React app.
+
+👨‍💻 Author
+
+Developed as part of CDAC Project – Employee Management System.
+
+
+---
+
+✅ Now you have:
+- **EMS-Backend repo** → with professional description & README.  
+- **EMS-Frontend repo** → with professional description & README.  
+
+Both look clean and consistent 🔥.  
+
+---
+
+👉 Do you want me to also create a **common top-level README** (EmployeeHub root README) in case you later want to combine both repos under one GitHub organization or monorepo?
+
