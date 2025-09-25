@@ -1,22 +1,36 @@
-# EMS-Backend
+# EmployeeHub – Full Stack Employee Management System
 
-Backend for **Employee Management System (EMS)** built with:
+EmployeeHub is a **full stack Employee Management System (EMS)** built as part of the **CDAC Project**.  
+It helps organizations manage **employees, departments, and attendance** with a secure, role-based platform.  
 
-- ⚡ [.NET 9](https://dotnet.microsoft.com/) Web API  
-- 🗄️ [Entity Framework Core](https://learn.microsoft.com/ef/core/) + MySQL (Pomelo)  
-- 🔐 JWT Authentication & Role-based Authorization  
-- 📚 AutoMapper for DTO mapping  
-- 🛠️ Swagger for API documentation  
+---
+
+## 🔹 Tech Stack
+
+### Backend (this repo)
+- ⚡ ASP.NET Core 9 Web API
+- 🗄️ Entity Framework Core 9 + MySQL (Pomelo)
+- 🔐 JWT Authentication & Role-based Authorization
+- 📚 AutoMapper for DTO mapping
+- 🛠 Swagger for API documentation
+
+### Frontend
+- 🎨 React + Vite + TypeScript
+- 📦 Material UI (MUI) for modern UI
+- 🔗 Axios for API calls
+- 🔑 Integrated with JWT authentication
+
+👉 Frontend Repo: [EMS-Frontend](https://github.com/your-username/EMS-Frontend)
 
 ---
 
 ## 🚀 Features
-- 🔑 User Authentication (Register/Login with JWT)
+- 🔑 User Authentication (Register / Login with JWT)
 - 🏢 Department Management (CRUD APIs)
 - 👨‍💼 Employee Management (CRUD APIs with department relation)
-- 📅 Attendance Management (CRUD APIs, mark present/absent)
+- 📅 Attendance Management (mark present/absent, view history)
 - 🎯 Role-based Access Control (Admin vs Employee)
-- 📖 Swagger UI for API testing
+- 📖 Swagger UI for backend API testing
 
 ---
 
@@ -32,32 +46,35 @@ EMS-Backend/
 ├── Program.cs # Entry point (DI, Auth, Swagger, CORS setup)
 └── appsettings.json # Config (DB connection, JWT secrets)
 
+yaml
+Copy code
+
 ---
 
-## ⚡ Setup & Run
+## ⚡ Getting Started
 
 ### 1. Clone the Repo
 ```bash
 git clone https://github.com/your-username/EMS-Backend.git
 cd EMS-Backend
 2. Configure Database
-
 Update appsettings.json with your MySQL connection string:
 
+json
+Copy code
 "ConnectionStrings": {
   "DefaultConnection": "server=localhost;database=employeedb;user=root;password=yourpassword;"
 }
-
-
 Run EF migrations:
 
+bash
+Copy code
 dotnet ef migrations add InitialCreate
 dotnet ef database update
-
 3. Run the API
+bash
+Copy code
 dotnet run
-
-
 API will start on:
 
 🔗 http://localhost:5041
@@ -66,25 +83,18 @@ API will start on:
 
 Swagger available at:
 👉 https://localhost:7031/swagger
-🔗 Frontend
 
-This backend powers the EMS-Frontend
- React app.
+🔗 Running the Frontend
+Clone the frontend repo in a separate folder:
+
+bash
+Copy code
+git clone https://github.com/your-username/EMS-Frontend.git
+cd EMS-Frontend
+npm install
+npm run dev
+Frontend will start on 👉 http://localhost:5173
+Make sure the backend is running before using the frontend.
 
 👨‍💻 Author
-
 Developed as part of CDAC Project – Employee Management System.
-
-
----
-
-✅ Now you have:
-- **EMS-Backend repo** → with professional description & README.  
-- **EMS-Frontend repo** → with professional description & README.  
-
-Both look clean and consistent 🔥.  
-
----
-
-👉 Do you want me to also create a **common top-level README** (EmployeeHub root README) in case you later want to combine both repos under one GitHub organization or monorepo?
-
